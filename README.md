@@ -2,7 +2,7 @@
 An open-source, modern social media platform. Built for community, connection, and privacy-focused interaction.
 <br>
 <h5>Authors:-</h5>
-<h6>Shlok Pathak</h6>
+<h5>Shlok Pathak</h5>
 <p>Github:- https://github.com/ShlokPathak28</p>
-<h6>Nishita Upreti</h6>
+<h5>Nishita Upreti</h5>
 <p>Github:- https://github.com/NishitaUpreti</p>
