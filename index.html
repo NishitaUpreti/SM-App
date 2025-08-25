@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social App Home</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Link to the JavaScript file -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3 class="menu-title">Menu</h3>
+            <button id="close-menu-btn" class="icon-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Profile</a></li>
+            <li><a href="#" class="nav-link">Notifications</a></li>
+            <li><a href="#" class="nav-link">Messages</a></li>
+            <li><a href="#" class="nav-link">Account</a></li>
+            <li><a href="#" class="nav-link">Settings</a></li>
+            <li><a href="#" class="nav-link">Privacy</a></li>
+            <li class="dark-mode-toggle-item">
+                <span class="dark-mode-label">Dark Mode</span>
+                <button id="dark-mode-toggle" class="dark-mode-btn">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-container">
+                <div class="header-left">
+                    <!-- Hamburger Menu Button (visible on mobile) -->
+                    <button id="hamburger-btn" class="icon-btn hamburger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                    <!-- App Logo -->
+                    <div class="logo">AppLogo</div>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Profile</a>
+                    <a href="#" class="nav-link">Notifications</a>
+                    <a href="#" class="nav-link">Messages</a>
+                </nav>
+
+                <!-- User Menu/Search -->
+                <div class="user-menu">
+                    <button class="btn btn-primary">Create Post</button>
+                    <div class="profile-pic-container">
+                        <img src="https://placehold.co/40x40/C4B5FD/4C447D?text=P" alt="Profile Picture" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="main-layout">
+
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="card profile-card">
+                    <h2 class="card-title">Your Profile</h2>
+                    <div class="profile-info">
+                        <img src="https://placehold.co/60x60/C4B5FD/4C447D?text=P" alt="Profile Picture" class="large-profile-pic">
+                        <div>
+                            <p class="profile-name">Jane Doe</p>
+                            <p class="profile-handle">@janedoe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-title">Trending</h2>
+                    <ul class="trending-list">
+                        <li><a href="#">#WebDevLife</a></li>
+                        <li><a href="#">#AIin2025</a></li>
+                        <li><a href="#">#NewBeginnings</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Feed -->
+            <section class="feed">
+                <!-- Create Post Input Area -->
+                <div class="card create-post-card">
+                    <h2 class="card-title">What's on your mind?</h2>
+                    <textarea class="post-textarea" placeholder="Share your thoughts..."></textarea>
+                    <div class="post-actions">
+                        <div class="post-icons">
+                            <!-- Photo Icon -->
+                            <button class="icon-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 18h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </button>
+                            <!-- Video Icon -->
+                            <button class="icon-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.65v6.696a1 1 0 01-1.447.894L15 14M4 18h9a2 2 0 002-2V8a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                            </button>
+                        </div>
+                        <button class="btn btn-primary">Post</button>
+                    </div>
+                </div>
+
+                <!-- Sample Post -->
+                <div class="card post-item">
+                    <!-- Post Header -->
+                    <div class="post-header">
+                        <img src="https://placehold.co/50x50/F472B6/6D28D9?text=J" alt="User Profile" class="post-profile-pic">
+                        <div class="post-meta">
+                            <p class="post-author">John Doe</p>
+                            <p class="post-handle">@johndoe • 2h</p>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content-section">
+                        <p class="post-text">Excited to start my new project on front-end development! Learning about modern CSS has been a game-changer. #coding #webdev #css</p>
+                        <img src="https://placehold.co/600x400/2563EB/ffffff?text=Project+Mockup" alt="Post Image" class="post-image">
+                    </div>
+                    <!-- Post Footer (Actions) -->
+                    <div class="post-footer">
+                        <div class="social-actions">
+                            <button class="like-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon like-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                                <span>12</span>
+                            </button>
+                            <button class="dislike-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon dislike-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5L12 4l7 10h-5m-2-2h4" /></svg>
+                                <span>0</span>
+                            </button>
+                            <button class="comment-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                                <span>5</span>
+                            </button>
+                            <button class="share-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.882 13.064 9 12.72 9 12c0-.72-.118-1.064-.316-1.342m-4.07 4.07a1 1 0 01-.707 0L1.757 15.243a1 1 0 010-1.414l.707-.707a1 1 0 011.414 0l.707.707a1 1 0 010 1.414zM12 12c-2.485 0-4.5-2.015-4.5-4.5S9.515 3 12 3s4.5 2.015 4.5 4.5S14.485 12 12 12zM12 12v9m10-9c0 2.485-2.015 4.5-4.5 4.5S13 16.485 13 14s2.015-4.5 4.5-4.5S22 9.515 22 12z" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More posts would go here -->
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="sidebar right-sidebar">
+                <div class="card">
+                    <h2 class="card-title">Suggested Users</h2>
+                    <ul class="suggested-users-list">
+                        <li class="suggested-user-item">
+                            <img src="https://placehold.co/40x40/FFB3BA/983354?text=U1" alt="Suggested User" class="suggested-user-pic">
+                            <div class="user-details">
+                                <p class="user-name">Alex Smith</p>
+                                <p class="user-handle">@asmith</p>
+                            </div>
+                            <button class="btn btn-follow">Follow</button>
+                        </li>
+                        <li class="suggested-user-item">
+                            <img src="https://placehold.co/40x40/BAE1FF/3A688A?text=U2" alt="Suggested User" class="suggested-user-pic">
+                            <div class="user-details">
+                                <p class="user-name">Sarah Chen</p>
+                                <p class="user-handle">@sarahc</p>
+                            </div>
+                            <button class="btn btn-follow">Follow</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card ad-card">
+                    <h2 class="card-title">Ad</h2>
+                    <div class="ad-placeholder">
+                        <p>Ad Placeholder</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+</body>
+</html>
